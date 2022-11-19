@@ -1,0 +1,21 @@
+// abstracts files
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// base files
+@import "base/reset";
+@import "base/typography";
+
+// vendors files
+@import "vendors/bootstrap/bootstrap.scss";
+
+// components files
+@import "components/buttons";
+@import "components/dropdown";
+
+// layout files
+@import "layout/header";
+
+// pages files
+@import "pages/home"
+

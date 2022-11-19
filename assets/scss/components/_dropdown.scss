@@ -1,0 +1,18 @@
+/**=====================
+    Dropdowan css start
+==========================**/
+.dropdown-toggle {
+    &:after {
+        border: none;
+        background-image: url(../images/icons/chevron-down.png);
+        background-size: 10px;
+        background-position: right;
+        width: 10px;
+        height: 10px;
+        background-repeat: no-repeat;
+        vertical-align: -1px;
+    }
+}
+/**=====================
+    Dropdowan css end
+==========================**/

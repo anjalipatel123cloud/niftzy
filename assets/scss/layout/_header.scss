@@ -1,0 +1,59 @@
+/**=====================
+    Header css start
+==========================**/
+header {
+    a {
+        text-transform: capitalize;
+    }
+    .btn {
+        min-width: 168px;
+    }
+    .nav-link {
+        color: var(--white);
+        &:focus, &:hover {
+            color: var(--white);
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            &.active {
+                color: var(--white);
+            }
+        }
+        .show {
+            >.nav-link {
+                color: var(--white);
+            }
+        }
+    }
+    .input-group {
+        input {
+            border-right: none;
+        }
+        .input-group-text {
+            background-color: transparent;
+            border-color: var( --header-form-border-color);
+            border-left: none;
+            margin-left: 0;
+        }
+        >:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+            margin-left: 0;
+        }
+    }
+    .form-control {
+        background-color: transparent;
+        border-color: var( --header-form-border-color);
+        color: var(--white);
+        &::placeholder {
+            color: var( --header-form-border-color);
+        }
+        &:focus {
+            background-color: transparent;
+            color: var(--white);
+        }
+    }
+}
+
+/**=====================
+    Header css end
+==========================**/
