@@ -2,11 +2,178 @@
     Home page css start
 ==========================**/
 .home-container {
-    background-image: url(../images/home-page/bg-1.jpg);
+    background-image: url(../images/home-page/bg_slider.jpg);
     background-size: cover;
     text-align: center;
+    padding-top: 108px;
+    .cursive {
+        color: $secondary-2;
+    }
+    .home-details {
+        p {
+            font-weight: 500;
+            width: 49%;
+            margin: 0 auto 15px;
+        }
+    }
+    .home-decor {
+        position: absolute;
+        right: 2%;
+        top: 10%;
+    }
+}
+// collections css
+.collection-box {
+    position: relative;
+    height: 100%;
+    .collection-image {
+        height: 100%;
+        img {
+            border-radius: 8px;
+            height: 100%;
+        }
+    }
+    
+    .collection-details {
+        position: absolute;
+        bottom: 0;
+        padding: 20px;
+        p {
+            font-weight: 400;
+            color: rgba($white, 0.6);
+        }
+    }
+}
+.support-wallet {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    li {
+        display: block;
+        a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            background: radial-gradient(50% 50% at 50% 50%, #202A42 0%, #252E42 100%);
+            border-radius: 5px;
+            overflow: hidden;
+            > span {
+                padding: 12px 16px;
+                width: 84px;
+                @include flex-center;
+            }
+        }
+        .wallet-title {
+            background-image: linear-gradient(to right, #2a3882 20%, #27314f 80%);
+            backdrop-filter: blur(45.0242px);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 23px 18px;
+            border-radius: 5px;
+            margin-bottom: 0;
+            color: $white;
+        }
+    }
 }
 
+// buy section
+.buy-wrapper {
+    .buy-details {
+        p {
+            opacity: 0.7;
+            width: 83%;
+            line-height: 34px;
+        }
+        ul {
+            display: flex;
+            gap: 27px;
+            padding: 15px;
+            border: 1px solid var(--title-bottom-border-color);
+            border-radius: 5px;
+            width: 76%;
+            li {
+                background: #212839;
+                box-shadow: 18px 18px 36px rgba($black, 0.25), -18px -18px 36px rgba($white, 0.05), inset 1px 1px 2px rgba($black, 0.02);
+                border-radius: 5px;
+                width: 100%;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+    .explore-buy {
+        img {
+            border-radius: 10px;
+        }
+        .explore-img-1 {
+           img {
+            position: relative;
+           }
+            a {
+                margin-top: 30px;
+                margin-left: -15%;
+            }
+        }
+        .explore-img-2 {
+            margin-top: 10%;
+            margin-left: -6%;
+        }
+    }
+}
+
+// creator section
+.creator-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.creator-box {
+    position: relative;
+    &::before {
+        background-image: linear-gradient(294.03deg,var(--title-bottom-border-color) 49.81%,transparent 84.41%);
+        border-radius: 5px;
+        content: "";
+        height: calc(100% + 2px);
+        position: absolute;
+        transform: matrix(-1,0,0,1,0,0);
+        width: calc(100% + 2px);
+        z-index: -2;
+        left: -1px;
+        top: -1px;
+    }
+    .creator-img {
+        position: relative;
+        background-color: var(--author-profile-bg);
+        border-radius: 100%;
+        width: 56px;
+        height: 56px;
+        box-shadow: -3px -2px 19px 10px rgba(255 ,255, 255, 0.05);
+        .mark-icon {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .author-box {
+        background: var(--author-bg);
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 15px;
+        width: 230px;
+        border-radius: 5px;
+        span {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
 /**=====================
     Home page css end
 ==========================**/

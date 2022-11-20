@@ -2,14 +2,28 @@
 :root {
     --white: #fff;
     --black: #000;
+    --body-background: #1a1e27;
+    --text-light-color: #8A90AD;
+    --title-bottom-border-color: #454C6C;
+    --author-bg:#272d3b;
+    --author-profile-bg: #212839;
+
+    // dropdown color settings
+    --dropdwon-menu-bg: #1d212c; 
+    --dropdown-item-text-color: #8E9CBE;
 
     // header colors
     --header-form-border-color: rgba(142,156,190,.5);
 }
 
+// common colors
+$white: #fff;
+$black: #000;
+
 // template color plate
 $primary: #3A6FFF;
 $secondary: #FFA504;
+$secondary-2: #FFB905;
 $color-3: #8E9CBE;
 $color-4: #1F2A42;
 $color-5: #64AF5B;

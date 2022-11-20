@@ -13,6 +13,66 @@
     -webkit-text-fill-color: transparent;
 }
 
+// custom font css
+@font-face {
+    font-family: Larsseit;
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/Larsseit-Bold.otf)format('opentype'),
+        url('../fonts/Larsseit-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: Larsseit;
+    font-weight: 500;
+    font-style: normal;
+    src: url(../fonts/Larsseit-Medium.otf) format('opentype'),
+        url('../fonts/Larsseit-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: Larsseit;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/Larsseit-Light.otf) format('opentype'),
+        url('../fonts/Larsseit-Light.woff') format('woff');
+}
+
+.cursive {
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+}
+.font-light {
+    color: var(--text-light-color);
+    opacity: 0.8;
+}
+.section-title {
+    margin-bottom: 50px;
+    h2 {
+        position: relative;
+        padding-bottom: 20px;
+        span {
+            color: $primary;
+        }
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            height: 1px;
+            left: 0;
+            background-color: var(--title-bottom-border-color);
+        }
+        &::before {
+            bottom: 7px;
+            width: 320px;
+        }
+        &::after {
+            bottom: 0;
+            width: 274px;
+        }
+    }
+}
+
+.text-secondary {
+    color: $secondary-2;
+}
 /**=====================
    Reset css end
 ==========================**/

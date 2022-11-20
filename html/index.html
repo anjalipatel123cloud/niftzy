@@ -11,6 +11,12 @@
     <!-- Favicon icon -->
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon"/>
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon"/>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- custom main css file -->
     <link rel="stylesheet" href="../assets/css/main.min.css">
 
@@ -20,7 +26,7 @@
         <!-- header start -->
         <header>
             <nav class="navbar navbar-expand-lg bg-dark">
-                <div class="container-fluid">
+                <div class="custom-container container">
                     <a class="navbar-brand" href="index.html">
                         <img src="../assets/images/logo.png" alt="logo">
                     </a>
@@ -30,7 +36,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -76,7 +82,10 @@
                                     <img src="../assets/images/icons/search.svg" alt="search icon">
                                 </span>
                             </div>
-                            <a class="btn btn-default" href="#">Connect Wallet</a>
+                            <a class="btn btn-default" href="#">
+                                Connect Wallet
+                                <img class="ms-1" src="../assets/images/icons/arrow-right-white.svg" alt="arrow right white">
+                            </a>
                         </form>
                     </div>
                 </div>
@@ -86,17 +95,343 @@
 
         <!-- home section start -->
         <section class="home-container">
-            <div class="container">
-                <h4>Introducing</h4>
-                <h1>
-                    <span class="text-gradient-1">Discover, Collect </span>
-                     and Sell Extra Ordinary 
-                     <span class="text-gradient-2">NFTs</span>
-                </h1>
-                <p>The concept behind Blue Door is simple: make a good deal for people by giving them better products at an even better price</p>
-            </div>x
+            <div class="custom-container container">
+                <div class="home-details">
+                    <h4 class="cursive">The new way to become a millionaire</h4>
+                    <h1>
+                        <span class="text-gradient-1">Discover, Collect </span>
+                        <span><img src="../assets/images/icons/arrow-yellow.svg" alt="arrow right"></span>
+                        and Sell Extra Ordinary 
+                        <span><img src="../assets/images/icons/zig-zag.svg" alt="zig zag"></span>
+                        <span class="text-gradient-2">NFTs</span>
+                    </h1>
+                    <p class="font-light">NFTs are one of the hottest trends to come along in a while, and they’re taking the digital marketing world by storm in a big way.</p>
+                    <img src="../assets/images/home-page/home_img.png" class="img-fluid" alt="nft">
+                </div>
+                <!-- <img class="home-decor" src="../assets/images/home-page/home-animation.gif" alt="gif"> -->
+            </div>
         </section>
         <!-- home section end -->
+
+        <!-- collection section start -->
+        <section>
+            <div class="custom-container container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="section-title">
+                            <h2>Our Top <span>Collections</span></h2>
+                        </div>
+                        <div class="collection-wrapper">
+                            <div class="row g-sm-4">
+                                <div class="col-lg-6">
+                                    <div class="collection-box">
+                                        <div class="collection-image">
+                                            <img src="../assets/images/collections/1.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="collection-details">
+                                            <h3>Head human shattered portrait</h3>
+                                            <p class="mb-0">Saint Vincent and the Grenadines</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row g-sm-4">
+                                        <div class="col-lg-6">
+                                            <div class="collection-box">
+                                                <div class="collection-image">
+                                                    <img src="../assets/images/collections/2.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="collection-details">
+                                                    <h3>Colorful magic tree</h3>
+                                                    <p class="mb-0">Saint Barthélemy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="collection-box">
+                                                <div class="collection-image">
+                                                    <img src="../assets/images/collections/4.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="collection-details">
+                                                    <h3>Digital planet blue</h3>
+                                                    <p class="mb-0">Saint Barthélemy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="collection-box">
+                                                <div class="collection-image">
+                                                    <img src="../assets/images/collections/3.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="collection-details">
+                                                    <h3>Female bust with virtual goggles-spheres</h3>
+                                                    <p class="mb-0">Saint Barthélemy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="collection-box">
+                                                <div class="collection-image">
+                                                    <img src="../assets/images/collections/5.jpg" class="img-fluid" alt="">
+                                                </div>
+                                                <div class="collection-details">
+                                                    <h3>Digital planet blue</h3>
+                                                    <p class="mb-0">Saint Barthélemy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="section-title">
+                            <h2>Supported <span>Wallet</span></h2>
+                        </div>
+                        <div class="support-wallet">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            <img src="../assets/images/wallet-icon/1.svg" alt="">
+                                        </span>
+                                        <h4 class="wallet-title">
+                                            Market Place
+                                            <img class="img-fluid" src="../assets/images/icons/arrow-blue.svg" alt="">
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            <img src="../assets/images/wallet-icon/2.svg" alt="">
+                                        </span>
+                                        <h4 class="wallet-title">
+                                            Bitski
+                                            <img class="img-fluid" src="../assets/images/icons/arrow-blue.svg" alt="">
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            <img src="../assets/images/wallet-icon/6.svg" alt="">
+                                        </span>
+                                        <h4 class="wallet-title">
+                                            Fortmatic
+                                            <img class="img-fluid" src="../assets/images/icons/arrow-blue.svg" alt="">
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            <img src="../assets/images/wallet-icon/3.svg" alt="">
+                                        </span>
+                                        <h4 class="wallet-title">
+                                            WalletConnect
+                                            <img class="img-fluid" src="../assets/images/icons/arrow-blue.svg" alt="">
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            <img src="../assets/images/wallet-icon/4.svg" alt="">
+                                        </span>
+                                        <h4 class="wallet-title">
+                                            Coinbase Wallet
+                                            <img class="img-fluid" src="../assets/images/icons/arrow-blue.svg" alt="">
+                                        </h4>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            <img src="../assets/images/wallet-icon/5.svg" alt="">
+                                        </span>
+                                        <h4 class="wallet-title">
+                                            Arkane
+                                            <img class="img-fluid" src="../assets/images/icons/arrow-blue.svg" alt="">
+                                        </h4>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- collection section end -->
+
+        <!-- buy section start -->
+        <section class="buy-wrapper">
+            <div class="custom-container container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h2>Why Do you Need to <span>Buy NFT?</span></h2>
+                        </div>
+                        <div class="buy-details">
+                            <p>However, while traditional sports games provide a satisfying and entertaining reward, a large segment of the population suffers from various health conditions like cardiovascular, bone, and joint pain.</p>
+                            <ul>
+                                <li>
+                                    <h3>12,90+</h3>
+                                    <span class="text-secondary">Smart NFTs</span>
+                                </li>
+                                <li>
+                                    <h3>35,91+</h3>
+                                    <span class="text-secondary">WalletsNFTs</span>
+                                </li>
+                                <li>
+                                    <h3>24,53+</h3>
+                                    <span class="text-secondary">Transactions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="explore-buy">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="explore-img-1">
+                                        <img class="img-fluid" src="../assets/images/home-page/explore/1.jpg" alt="">
+                                        <a href="#" class="btn btn-default-outline">
+                                            <span>Explore Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="explore-img-2">
+                                        <img class="img-fluid" src="../assets/images/home-page/explore/2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- buy section end -->
+
+        <!-- creator section start -->
+        <section class="creator-wrapper pb-5">
+            <div class="custom-container container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section-title">
+                            <h2>Our Top <span>Creators </span> In 30 Days</h2>
+                        </div>
+                        <div class="creator-wrap">
+                            <div class="creator-box">
+                                <div class="author-box">
+                                    <a href="#" class="creator-img">
+                                        <img src="../assets/images/author/1.png" alt="vector men">
+                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                    </a>
+                                    <div>
+                                        <h5 class="mb-1">
+                                            <a href="#">Jacob Fox</a>
+                                        </h5>
+                                        <span class="font-light">
+                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                            40.67 ETH
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator-box">
+                                <div class="author-box">
+                                    <a href="#" class="creator-img">
+                                        <img src="../assets/images/author/2.png" alt="vector men">
+                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                    </a>
+                                    <div>
+                                        <h5 class="mb-1">
+                                            <a href="#">Jenny Wilson</a>
+                                        </h5>
+                                        <span class="font-light">
+                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                            40.67 ETH
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator-box">
+                                <div class="author-box">
+                                    <a href="#" class="creator-img">
+                                        <img src="../assets/images/author/3.png" alt="vector men">
+                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                    </a>
+                                    <div>
+                                        <h5 class="mb-1">
+                                            <a href="#">Henery Rao</a>
+                                        </h5>
+                                        <span class="font-light">
+                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                            40.67 ETH
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator-box">
+                                <div class="author-box">
+                                    <a href="#" class="creator-img">
+                                        <img src="../assets/images/author/4.png" alt="vector men">
+                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                    </a>
+                                    <div>
+                                        <h5 class="mb-1">
+                                            <a href="#">Arlenery Mac</a>
+                                        </h5>
+                                        <span class="font-light">
+                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                            40.67 ETH
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator-box">
+                                <div class="author-box">
+                                    <a href="#" class="creator-img">
+                                        <img src="../assets/images/author/5.png" alt="vector men">
+                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                    </a>
+                                    <div>
+                                        <h5 class="mb-1">
+                                            <a href="#">Alewry Flores</a>
+                                        </h5>
+                                        <span class="font-light">
+                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                            40.67 ETH
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="creator-box">
+                                <div class="author-box">
+                                    <a href="#" class="creator-img">
+                                        <img src="../assets/images/author/6.png" alt="vector men">
+                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                    </a>
+                                    <div>
+                                        <h5 class="mb-1">
+                                            <a href="#">Milers Flor</a>
+                                        </h5>
+                                        <span class="font-light">
+                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                            40.67 ETH
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- creator section end -->
     </main>
     
     <!-- jquery js file link -->
@@ -105,5 +440,7 @@
     <!-- bootstrap js file link -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Menu js file link -->
+    <script src="../assets/js/menu.js"></script>
 </body>
 </html>

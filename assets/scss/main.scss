@@ -2,12 +2,12 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
+// vendors files
+@import "vendors/bootstrap/bootstrap.scss";
+
 // base files
 @import "base/reset";
 @import "base/typography";
-
-// vendors files
-@import "vendors/bootstrap/bootstrap.scss";
 
 // components files
 @import "components/buttons";

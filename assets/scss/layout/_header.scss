@@ -2,16 +2,49 @@
     Header css start
 ==========================**/
 header {
+    position: absolute;
+    top: 0;
+    width: 100%; 
+    .navbar {
+        padding: 20px 0;
+    }
+    .bg-dark {
+        background: transparent !important;
+    }
     a {
         text-transform: capitalize;
     }
     .btn {
         min-width: 168px;
+        padding: 9px;
     }
     .nav-link {
         color: var(--white);
+        position: relative;
+        font-weight: 500;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 2px;
+            background-color: $primary;
+            bottom: 8px;
+            left: 15px;
+            opacity: 0;
+            transition: width 1s ease-in;
+        }
         &:focus, &:hover {
             color: var(--white);
+        }
+    }
+    .nav-item {
+        &.active {
+            .nav-link {
+                &::before {
+                    opacity: 1;
+                    transition: width 1s ease-in;
+                }
+            }
         }
     }
     .navbar-nav {
@@ -52,8 +85,22 @@ header {
             color: var(--white);
         }
     }
+    .dropdown-menu {
+        @include media-breakpoint-up(lg) {
+            min-width: 200px;
+        }
+    }
 }
 
+@include media-breakpoint-up(lg) {
+    .navbar-expand-lg {
+        .navbar-nav {
+            .nav-link {
+                padding: 14px;
+            }
+        }
+    }
+}
 /**=====================
     Header css end
 ==========================**/
