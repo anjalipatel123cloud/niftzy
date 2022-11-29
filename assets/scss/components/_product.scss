@@ -1,0 +1,112 @@
+/**=====================
+    Product css start
+==========================**/
+.product-wrapper {
+    .custom-tab {
+        justify-content: flex-end;
+    }
+}
+.product-container {
+    > div {
+        width: 20%;
+    }
+}
+.product-card {
+    transition: 0.5s all;
+    .product-img {
+        position: relative;
+        display: block;
+       img {
+            border-radius: 6px;
+            transition: 0.5s all;
+            width: 100%;
+       }
+       .avatar-box {
+            display: inline-block;
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+            background: var(--author-profile-bg);
+            padding: 6px;
+            border-radius: 100%;
+            .author-img {
+                background: linear-gradient(180deg, #758CFD 0%, rgba(53, 74, 183, 0) 100%);
+                border-radius: 100%;
+                padding: 1px;
+                display: block;
+                img {
+                    background: var(--product-avatar-bg);
+                    border-radius: 100%;
+                }
+            }
+       }
+    }
+    .dropdown-toggle {
+        padding: 0;
+        &::after {
+            display: none;
+        }
+        &:focus, &:active, &:focus-visible, &.show, &.active {
+            border: none;
+            box-shadow: none;
+        }
+    }
+    .product-details {
+        padding-top: 20px;
+        h3 {
+            margin-bottom: 0;
+            a {
+                transition: 0.5s all;
+            }
+        }
+        > .d-flex {
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--title-bottom-border-color);
+            margin-bottom: 20px;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                width: calc(100% - 40px);
+                height: 1px;
+                background-color: var(--title-bottom-border-color);
+                bottom: -5px;
+                left: 0;
+            }
+        }
+        .nft-details {
+            display: flex;
+            justify-content: space-between;
+            h6 {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            .place-content {
+                .d-flex {
+                    justify-content: flex-end;
+                    margin-bottom: 5px;
+                }
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    &:hover {
+       transform: translateY(-10px);
+       transition: 0.5s all;
+       .product-details {
+        h3 {
+           a {
+            color: $primary;
+            transition: 0.5s all;
+           }
+        }
+       }
+    }
+}
+/**=====================
+    Product css end
+==========================**/

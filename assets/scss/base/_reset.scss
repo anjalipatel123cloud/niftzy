@@ -73,6 +73,16 @@
 .text-secondary {
     color: $secondary-2;
 }
+
+.common-card {
+    padding: 12px;
+    background: var(--author-profile-bg);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1), inset 0px 4px 4px rgba(165, 185, 231, 0.2);
+    border-radius: 10px;
+    h3 {
+        font-size: 20px;
+    }
+}
 /**=====================
    Reset css end
 ==========================**/

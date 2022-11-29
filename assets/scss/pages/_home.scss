@@ -66,6 +66,7 @@
             }
         }
         .wallet-title {
+            position: relative;
             background-image: linear-gradient(to right, #2a3882 20%, #27314f 80%);
             backdrop-filter: blur(45.0242px);
             display: flex;
@@ -75,6 +76,18 @@
             border-radius: 5px;
             margin-bottom: 0;
             color: $white;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                background-image: url(../images/bg-round.png);
+                background-size: 320px;
+                background-repeat: no-repeat;
+            }
         }
     }
 }
@@ -125,10 +138,21 @@
 }
 
 // creator section
+.sort-select {
+    h5 {
+        min-width: 100px;
+        margin-bottom: 0;
+    }
+    .custom-select {
+        min-width: 170px;
+    }
+}
 .creator-wrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    > div {
+        width: 16.66%;
+    }
 }
 .creator-box {
     position: relative;
@@ -157,6 +181,13 @@
             bottom: 0;
         }
     }
+    h5 {
+        a {
+            &:hover {
+                color: var(--white);
+            }
+        }
+    }
     .author-box {
         background: var(--author-bg);
         position: relative;
@@ -165,12 +196,208 @@
         align-items: center;
         gap: 16px;
         padding: 15px;
-        width: 230px;
         border-radius: 5px;
+        > div {
+            position: relative;
+        }
+        &::after, &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top:0;
+            left: 0;
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+            transition: width 0.5s;
+            border-radius: 5px;
+        }
+        &::before {
+            background-image: url(../images/bg-round.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &::after {
+            background: radial-gradient(50% 50% at 50% 50%, rgba(32, 42, 66, 0.01) 0%, rgba(37, 46, 66, 0.01) 100%);
+            opacity: 0.7;
+        }
         span {
             font-weight: 500;
             display: flex;
             align-items: center;
+        }
+    }
+    &:hover {
+        .author-box {
+            &::before, &::after {
+                opacity: 1;
+                width: 100%;
+                visibility: visible;
+                transform: translateY(6px);
+                transition: width 0.5s;
+            }
+        }
+    }
+}
+
+// create section
+@keyframes rotation {
+    100%{ transform:rotatey(360deg); }
+}
+@keyframes create-rotate {
+    0% {
+        transform: rotate(0deg);
+        transition: 2s all;
+    }
+    100% {
+        transform: rotate(360deg);  
+        transition: 2s all;
+    }
+}
+.create-card {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    height: 100%;
+    > img {
+        position: absolute;
+        width: 60%;
+        right: 0;
+        opacity: 0.6;
+        transition: 1s all;
+    }
+    h3 {
+        a {
+            transition: 0.5s all;
+        }
+    }
+    .bg-shape {
+        top: 5px;
+        &-1 {
+            right: -10px;
+            bottom: -50px;
+            transform: rotate(160deg);
+        }
+        &-2 {
+            bottom: -40px;
+            transform: rotate(60deg);
+        }
+        &-3 {
+            bottom: 0;
+            right: -130px;
+            transform: rotate(-60deg);
+        }
+    }
+    .create-details {
+        margin-top: 20px;
+        z-index: 1;
+        position: relative;
+        p {
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    }
+    &:hover {
+        h3 {
+            a {
+                color: $primary;
+                transition: 0.5s all;
+            }
+        }
+        > img {
+            animation: create-rotate 2s infinite;
+        }
+    }
+}
+.sell-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    .rotate-img {
+        animation: rotation 4s infinite linear;
+        margin-left: -100px;
+    }
+    .bg-sell {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.live-wrapper {
+    .nft-details {
+        align-items: flex-end;
+    }
+}
+
+// collection css
+.collection-card {
+    padding: 16px;
+    .collection-image {
+        position: relative;
+        text-align: center;
+        .banner-img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .collection-label {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-transform: capitalize;
+            background: rgba($white, 0.44);
+            background-blend-mode: overlay;
+            backdrop-filter: blur(20px);
+            border-radius: 5px;
+            padding: 6px 15px;
+        }
+        .collection-author {
+            background-color: var(--author-profile-bg);
+            display: inline-block;
+            border-radius: 100%;
+            margin-top: -40px;
+            padding: 10px;
+           > div {
+            background: linear-gradient(180deg, $primary 0%, rgba(53, 74, 183, 0) 100%);
+            display: inline-block;
+            padding: 1.5px;
+            border-radius: 100%;
+           }
+        }
+        .avatar-img {
+            background-color: var(--product-avatar-bg);
+            border-radius: 100%;
+            padding: 8px;
+        }
+        .avatar-wrap {
+            padding: 1.5px;
+            background: linear-gradient(180deg, $primary 0%, rgba(53, 74, 183, 0) 100%);
+            border-radius: 100%;
+            img {
+                margin: 0 auto;
+                background-color: var(--product-avatar-bg);
+                border-radius: 100%;
+            }
+        }
+    }
+    .collection-list {
+        h3 {
+            font-size: 18px;
+        }
+        img {
+            border-radius: 4px;
+            width: 100%;
+        }
+        .label {
+            background: conic-gradient(from 180deg at 50% 50%, #202A42 0deg, #243253 360deg);
+            padding: 6px 10px;
+        }
+        .d-flex {
+            margin-top: 20px;
         }
     }
 }

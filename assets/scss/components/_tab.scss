@@ -1,0 +1,19 @@
+/**=====================
+    Tab css start
+==========================**/
+.custom-tab {
+    border-bottom: none;
+    .nav-link {
+        color: var(--white);
+        font-size: 16px;
+        border-radius: 0;
+        border: none;
+        &.active {
+            background: linear-gradient(180deg, #3A6FFF 0%, rgba(58, 111, 255, 0) 100%);
+            color: var(--white);
+        }
+    }
+}
+/**=====================
+    Tab css end
+==========================**/

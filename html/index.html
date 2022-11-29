@@ -17,6 +17,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- slick css file -->
+    <link rel="stylesheet" href="../assets/css/vendors/slick.css">
+    <link rel="stylesheet" href="../assets/css/vendors/slick-theme.css">
+
     <!-- custom main css file -->
     <link rel="stylesheet" href="../assets/css/main.min.css">
 
@@ -316,113 +320,251 @@
         <!-- buy section end -->
 
         <!-- creator section start -->
-        <section class="creator-wrapper pb-5">
+        <section class="creator-wrapper">
             <div class="custom-container container">
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="section-title">
+                        <div class="section-title d-flex justify-content-between">
                             <h2>Our Top <span>Creators </span> In 30 Days</h2>
+                            <div class="sort-select d-flex align-items-center">
+                                <h5 class="font-light">Short By :</h5>
+                                <div class="custom-select">
+                                    <select class="form-select">
+                                        <option>Recent added</option>
+                                        <option>week ago</option>
+                                        <option>year ago</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="creator-wrap">
-                            <div class="creator-box">
-                                <div class="author-box">
-                                    <a href="#" class="creator-img">
-                                        <img src="../assets/images/author/1.png" alt="vector men">
-                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
-                                    </a>
-                                    <div>
-                                        <h5 class="mb-1">
-                                            <a href="#">Jacob Fox</a>
-                                        </h5>
-                                        <span class="font-light">
-                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
-                                            40.67 ETH
-                                        </span>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="creator-wrap row g-sm-4">
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Jacob Fox</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="creator-box">
-                                <div class="author-box">
-                                    <a href="#" class="creator-img">
-                                        <img src="../assets/images/author/2.png" alt="vector men">
-                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
-                                    </a>
-                                    <div>
-                                        <h5 class="mb-1">
-                                            <a href="#">Jenny Wilson</a>
-                                        </h5>
-                                        <span class="font-light">
-                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
-                                            40.67 ETH
-                                        </span>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/2.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Jenny Wilson</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="creator-box">
-                                <div class="author-box">
-                                    <a href="#" class="creator-img">
-                                        <img src="../assets/images/author/3.png" alt="vector men">
-                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
-                                    </a>
-                                    <div>
-                                        <h5 class="mb-1">
-                                            <a href="#">Henery Rao</a>
-                                        </h5>
-                                        <span class="font-light">
-                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
-                                            40.67 ETH
-                                        </span>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/3.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Henery Rao</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="creator-box">
-                                <div class="author-box">
-                                    <a href="#" class="creator-img">
-                                        <img src="../assets/images/author/4.png" alt="vector men">
-                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
-                                    </a>
-                                    <div>
-                                        <h5 class="mb-1">
-                                            <a href="#">Arlenery Mac</a>
-                                        </h5>
-                                        <span class="font-light">
-                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
-                                            40.67 ETH
-                                        </span>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/4.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Arlenery Mac</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="creator-box">
-                                <div class="author-box">
-                                    <a href="#" class="creator-img">
-                                        <img src="../assets/images/author/5.png" alt="vector men">
-                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
-                                    </a>
-                                    <div>
-                                        <h5 class="mb-1">
-                                            <a href="#">Alewry Flores</a>
-                                        </h5>
-                                        <span class="font-light">
-                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
-                                            40.67 ETH
-                                        </span>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/5.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Alewry Flores</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="creator-box">
-                                <div class="author-box">
-                                    <a href="#" class="creator-img">
-                                        <img src="../assets/images/author/6.png" alt="vector men">
-                                        <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
-                                    </a>
-                                    <div>
-                                        <h5 class="mb-1">
-                                            <a href="#">Milers Flor</a>
-                                        </h5>
-                                        <span class="font-light">
-                                            <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
-                                            40.67 ETH
-                                        </span>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Milers Flor</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/7.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Cody Fisget</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/8.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Robert Fox</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Nguyerd</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/10.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Jacob Fox</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/11.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Black Bell</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="creator-box">
+                                    <div class="author-box">
+                                        <a href="#" class="creator-img">
+                                            <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            <img class="mark-icon" src="../assets/images/author/mark.svg" alt="">
+                                        </a>
+                                        <div>
+                                            <h5 class="mb-1">
+                                                <a href="#">Black Bell</a>
+                                            </h5>
+                                            <span class="font-light">
+                                                <img class="nft-icon me-1" src="../assets/images/author/icon.svg" alt=""/>
+                                                40.67 ETH
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -432,6 +574,2380 @@
             </div>
         </section>
         <!-- creator section end -->
+
+        <!-- market place section start -->
+        <section class="product-wrapper">
+            <div class="custom-container container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="section-title">
+                            <h2>NFT Market Place <span>Hot Drops</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <ul class="nav nav-tabs custom-tab" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="collection" aria-selected="true">All Collections</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="art-tab" data-bs-toggle="tab" data-bs-target="#art" type="button" role="tab" aria-controls="art" aria-selected="false">Art</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="illustration-tab" data-bs-toggle="tab" data-bs-target="#illustration" type="button" role="tab" aria-controls="illustration" aria-selected="false">Illustration</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="photography-tab" data-bs-toggle="tab" data-bs-target="#photography" type="button" role="tab" aria-controls="photography" aria-selected="false">Photography</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music" type="button" role="tab" aria-controls="music" aria-selected="false">Music</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="collection" role="tabpanel" aria-labelledby="collection-tab">
+                        <div class="row product-container g-sm-4">
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/1.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/13.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Scared Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown1">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">2</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/2.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Scepical Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>6.15 ETH  7/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/3.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Jaded Cat #1098</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">2</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/4.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Horrified Angry Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/5.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Mean Angry Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/6.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/13.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>4.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/7.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">6</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/8.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">NFT Character</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>6.55 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">10</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/9.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cap With Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>3.05 ETH  7/20</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/10.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Grendaz Character </a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>7.00 ETH  7/10</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="art" role="tabpanel" aria-labelledby="art-tab">
+                        <div class="row product-container g-sm-4">
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/4.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Horrified Angry Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/5.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Mean Angry Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/6.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/13.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>4.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/7.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">6</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/8.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">NFT Character</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>6.55 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">10</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/9.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cap With Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>3.05 ETH  7/20</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/10.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Grendaz Character </a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>7.00 ETH  7/10</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="illustration" role="tabpanel" aria-labelledby="illustration-tab">
+                        <div class="row product-container g-sm-4">
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/1.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/13.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Scared Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown1">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">2</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/2.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Scepical Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>6.15 ETH  7/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/3.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Jaded Cat #1098</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">2</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/4.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Horrified Angry Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/7.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">6</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/8.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">NFT Character</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>6.55 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">10</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/9.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cap With Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>3.05 ETH  7/20</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/10.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Grendaz Character </a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>7.00 ETH  7/10</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="photography" role="tabpanel" aria-labelledby="photography-tab">
+                        <div class="row product-container g-sm-4">
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/1.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/13.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Scared Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown1">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">2</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/2.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Scepical Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>6.15 ETH  7/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/3.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Jaded Cat #1098</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">2</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/4.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Horrified Angry Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/5.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Mean Angry Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/6.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/13.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>4.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/7.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">6</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/8.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">NFT Character</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>6.55 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">10</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/9.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cap With Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>3.05 ETH  7/20</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="music" role="tabpanel" aria-labelledby="music-tab">
+                        <div class="row product-container g-sm-4">
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/4.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Horrified Angry Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/5.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Mean Angry Cat #1011</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/6.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/13.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>4.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/7.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/1.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cat #10111</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>5.45 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">6</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/8.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/12.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">NFT Character</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>6.55 ETH  3/25</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">10</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/9.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/9.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Angry Cap With Cat</a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>3.05 ETH  7/20</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">3</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="product-card common-card">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="../assets/images/products/10.jpg" alt="nft">
+                                        </a>
+                                        <div class="avatar-box">
+                                            <a href="#" class="author-img">
+                                                <img src="../assets/images/author/6.png" alt="vector avatar">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <div class="d-flex gap-1 justify-content-between">
+                                            <h3>
+                                                <a href="#">Grendaz Character </a>
+                                            </h3>
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nft-details">
+                                            <div class="d-flex align-items-start">
+                                                <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                                <div>
+                                                    <h6 class="font-light">Highest Bid</h6>
+                                                    <h6>7.00 ETH  7/10</h6>
+                                                </div>
+                                            </div>
+                                            <div class="place-content">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <img src="../assets/images/icons/heart.svg" alt="heart icon">
+                                                    <span class="font-light">4</span>
+                                                </div>
+                                                <a href="#" class="d-block text-secondary">Place Bid</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- market place section end -->
+
+        <!-- sell section start -->
+        <section>
+            <div class="custom-container container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="section-title">
+                            <h2>Create and <span>sell your NFTs</span></h2>
+                        </div>
+                        <div class="row g-sm-3">
+                            <div class="col-xl-6">
+                                <div class="create-card common-card">
+                                    <div class="create-img">
+                                        <img src="../assets/images/sell/1.png" alt="wallet icon">
+                                    </div>
+                                    <div class="create-details">
+                                        <h3><a href="#">Set Up Your Wallet</a></h3>
+                                        <p class="font-light">Once you’ve set up your wallet of choice, connect it to OpenSea by clicking the NFT Marketplace in the top right corner</p>
+                                    </div>
+                                    <img class="bg-shape" src="../assets/images/sell/shape-1.png" alt="dots">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="create-card common-card">
+                                    <div class="create-img">
+                                        <img src="../assets/images/sell/2.png" alt="cart icon">
+                                    </div>
+                                    <div class="create-details">
+                                        <h3><a href="#">Connect Your Wallet</a></h3>
+                                        <p class="font-light">Click Create and set up your collection. Add social links, a description, profile images, and set a secondary sales fee.</p>
+                                    </div>
+                                    <img class="bg-shape-1" src="../assets/images/sell/shape-1.png" alt="dots">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="create-card common-card">
+                                    <div class="create-img">
+                                        <img src="../assets/images/sell/3.png" alt="coin icon">
+                                    </div>
+                                    <div class="create-details">
+                                        <h3><a href="#">Add Your NFTs</a></h3>
+                                        <p class="font-light">Upload your work (image, video, audio, or 3D art), add a title and description, and customize your NFTs with properties,</p>
+                                    </div>
+                                    <img class="bg-shape-2" src="../assets/images/sell/shape-1.png" alt="dots">
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="create-card common-card">
+                                    <div class="create-img">
+                                        <img src="../assets/images/sell/4.png" alt="coin icon">
+                                    </div>
+                                    <div class="create-details">
+                                        <h3><a href="#">Sell Your NFTs</a></h3>
+                                        <p class="font-light">Choose between auctions, fixed-price listings, and declining-price listings.</p>
+                                    </div>
+                                    <img class="bg-shape-3" src="../assets/images/sell/shape-1.png" alt="dots">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="sell-image-container">
+                            <img class="bg-sell" src="../assets/images/sell/bg-sell.png" alt="nft background">
+                            <img class="rotate-img" src="../assets/images/sell/3d-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sell section end -->
+
+        <!-- live section start -->
+        <section class="live-wrapper">
+            <div class="custom-container container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section-title">
+                            <h2>Live <span>Action</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product-container g-sm-4">
+                    <div class="col-auto">
+                        <div class="product-card common-card">
+                            <div class="product-img">
+                                <a href="#">
+                                    <img src="../assets/images/products/11.jpg" alt="nft">
+                                </a>
+                                <div class="avatar-box">
+                                    <a href="#" class="author-img">
+                                        <img src="../assets/images/author/13.png" alt="vector avatar">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <div class="d-flex gap-1 justify-content-between">
+                                    <h3>
+                                        <a href="#">Shiny Daimond Lion</a>
+                                    </h3>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="productdropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="productdropdown1">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nft-details">
+                                    <div class="d-flex align-items-start">
+                                        <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                        <div>
+                                            <h6 class="font-light">Highest Bid</h6>
+                                            <h6>5.45 ETH  3/25</h6>
+                                        </div>
+                                    </div>
+                                    <div class="place-content">
+                                        <a href="#" class="d-block text-secondary">Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="product-card common-card">
+                            <div class="product-img">
+                                <a href="#">
+                                    <img src="../assets/images/products/11.jpg" alt="nft">
+                                </a>
+                                <div class="avatar-box">
+                                    <a href="#" class="author-img">
+                                        <img src="../assets/images/author/12.png" alt="vector avatar">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <div class="d-flex gap-1 justify-content-between">
+                                    <h3>
+                                        <a href="#">Art Sport</a>
+                                    </h3>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="productdropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="productdropdown1">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nft-details">
+                                    <div class="d-flex align-items-start">
+                                        <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                        <div>
+                                            <h6 class="font-light">Highest Bid</h6>
+                                            <h6>5.45 ETH  3/25</h6>
+                                        </div>
+                                    </div>
+                                    <div class="place-content">
+                                        <a href="#" class="d-block text-secondary">Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="product-card common-card">
+                            <div class="product-img">
+                                <a href="#">
+                                    <img src="../assets/images/products/12.jpg" alt="nft">
+                                </a>
+                                <div class="avatar-box">
+                                    <a href="#" class="author-img">
+                                        <img src="../assets/images/author/9.png" alt="vector avatar">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <div class="d-flex gap-1 justify-content-between">
+                                    <h3>
+                                        <a href="#">Space exploration </a>
+                                    </h3>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nft-details">
+                                    <div class="d-flex align-items-start">
+                                        <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                        <div>
+                                            <h6 class="font-light">Highest Bid</h6>
+                                            <h6>6.15 ETH  7/25</h6>
+                                        </div>
+                                    </div>
+                                    <div class="place-content">
+                                        <a href="#" class="d-block text-secondary">Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="product-card common-card">
+                            <div class="product-img">
+                                <a href="#">
+                                    <img src="../assets/images/products/13.jpg" alt="nft">
+                                </a>
+                                <div class="avatar-box">
+                                    <a href="#" class="author-img">
+                                        <img src="../assets/images/author/6.png" alt="vector avatar">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <div class="d-flex gap-1 justify-content-between">
+                                    <h3>
+                                        <a href="#">The Wonder  #1011</a>
+                                    </h3>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nft-details">
+                                    <div class="d-flex align-items-start">
+                                        <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                        <div>
+                                            <h6 class="font-light">Highest Bid</h6>
+                                            <h6>6.15 ETH  7/25</h6>
+                                        </div>
+                                    </div>
+                                    <div class="place-content">
+                                        <a href="#" class="d-block text-secondary">Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="product-card common-card">
+                            <div class="product-img">
+                                <a href="#">
+                                    <img src="../assets/images/products/14.jpg" alt="nft">
+                                </a>
+                                <div class="avatar-box">
+                                    <a href="#" class="author-img">
+                                        <img src="../assets/images/author/1.png" alt="vector avatar">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <div class="d-flex gap-1 justify-content-between">
+                                    <h3>
+                                        <a href="#">Vaporwave-stylE #1011</a>
+                                    </h3>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" id="productdropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="../assets/images/icons/more-horizontal.svg" alt="more horizontal icon">
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="productdropdown2">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nft-details">
+                                    <div class="d-flex align-items-start">
+                                        <img class="nft-icon me-2" src="../assets/images/author/icon.svg" alt="">
+                                        <div>
+                                            <h6 class="font-light">Highest Bid</h6>
+                                            <h6>6.15 ETH  7/25</h6>
+                                        </div>
+                                    </div>
+                                    <div class="place-content">
+                                        <a href="#" class="d-block text-secondary">Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- live section end -->
+
+        <!-- collection section start -->
+        <section>
+            <div class="custom-container container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section-title">
+                            <h2>Top <span>Collections</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="collection-slider">
+                            <div>
+                                <div class="common-card collection-card">
+                                    <div class="collection-image">
+                                        <img class="banner-img" src="../assets/images/collections/banner-1.jpg" alt="banner">
+                                        <span class="collection-label">following</span>
+                                        <div class="collection-author">
+                                           <div>
+                                            <div class="avatar-img">
+                                                <a href="#" class="avatar-wrap d-block">
+                                                    <img src="../assets/images/author/13.png" alt="vector avatar">
+                                                </a>
+                                            </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection-list">
+                                        <div class="row g-2">
+                                            <div class="col-6">
+                                                <a href="#" class="our-collection">
+                                                    <img class="img-fluid" src="../assets/images/collections/6.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" class="our-collection">
+                                                    <img class="img-fluid" src="../assets/images/collections/7.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="mb-0"><a href="#">Cbis Collection</a></h3>
+                                            <h6 class="label mb-0 text-secondary">10 Items</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="common-card collection-card">
+                                    <div class="collection-image">
+                                        <img class="banner-img" src="../assets/images/collections/banner-2.jpg" alt="banner">
+                                        <span class="collection-label">following</span>
+                                        <div class="collection-author">
+                                           <div>
+                                            <div class="avatar-img">
+                                                <a href="#" class="avatar-wrap d-block">
+                                                    <img src="../assets/images/author/8.png" alt="vector avatar">
+                                                </a>
+                                            </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="collection-list">
+                                        <div class="row g-2">
+                                            <div class="col-6">
+                                                <a href="#" class="our-collection">
+                                                    <img class="img-fluid" src="../assets/images/collections/8.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="#" class="our-collection">
+                                                    <img class="img-fluid" src="../assets/images/collections/9.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h3 class="mb-0"><a href="#">Orthogon Collection</a></h3>
+                                            <h6 class="label mb-0 text-secondary">10 Items</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- collection section end -->
     </main>
     
     <!-- jquery js file link -->
@@ -439,6 +2955,10 @@
 
     <!-- bootstrap js file link -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick js file link -->
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/custom-slick.js"></script>
 
     <!-- Menu js file link -->
     <script src="../assets/js/menu.js"></script>

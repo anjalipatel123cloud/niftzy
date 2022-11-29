@@ -1,5 +1,5 @@
 /**=====================
-    Dropdowan css start
+    Dropdown css start
 ==========================**/
 .dropdown-toggle {
     &:after {
@@ -17,9 +17,6 @@
     background-color: var(--dropdwon-menu-bg);
     padding: 0;
     overflow: hidden;
-    li {
-        display: block;
-    }
     .dropdown-item {
         color: var(--dropdown-item-text-color);
         padding: 12px 16px;
@@ -32,7 +29,15 @@
             outline: none;
         }
     }
+    li {
+        display: block;
+        &:last-child {
+            .dropdown-item {
+                border-bottom: none;
+            }
+        }
+    }
 }
 /**=====================
-    Dropdowan css end
+    Dropdown css end
 ==========================**/
