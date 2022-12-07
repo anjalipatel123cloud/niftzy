@@ -1,9 +1,8 @@
 $(".collection-slider").slick({
 
-    // normal options...
-    infinite: false,
+    infinite: true,
     slidesToShow: 5,
-    // the magic
+    // autoplay: true,
     responsive: [{
   
         breakpoint: 1024,

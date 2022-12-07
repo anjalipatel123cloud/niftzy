@@ -75,8 +75,9 @@ header {
     }
     .form-control {
         background-color: transparent;
-        border-color: var( --header-form-border-color);
-        color: var(--white);
+        border: 1px solid var( --header-form-border-color);
+        box-shadow: none;
+        padding: 6px 12px;
         &::placeholder {
             color: var( --header-form-border-color);
         }

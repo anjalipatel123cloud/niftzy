@@ -1,0 +1,70 @@
+/**=====================
+    footer css start
+==========================**/
+footer {
+    margin-top:100px;
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .footer-main {
+        padding: 100px 0;
+    }
+    .contact-details {
+        p {
+            margin-top: 30px;
+        }
+    }
+    .footer-link-container {
+        padding-left: 40px;
+        h4 {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+            &::before, &::after {
+                position: absolute;
+                content: "";
+                background-color: var(--title-bottom-border-color);
+                height: 1px;    
+                left: 0;
+            }
+            &::before {
+                width: calc(100% + 10px);
+                bottom: 7px;
+            }
+            &::after {
+                width: calc(100% - 30px);
+                bottom: 0;
+            }
+        }
+        .footer-lists {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                li {
+                    a {
+                        color: var(--dropdown-item-text-color);
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .form-footer {
+        position: relative;
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 5px;
+            padding: 6px 20px;
+        }
+    }
+}
+/**=====================
+    footer css end
+==========================**/

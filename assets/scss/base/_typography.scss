@@ -38,6 +38,10 @@ h5 {
 a {
     text-decoration: unset;
     color: var(--white);
+    transition: 0.5s all;
+    &:hover {
+        transition: 0.5s all;
+    }
 }
 
 li {

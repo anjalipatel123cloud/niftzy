@@ -18,7 +18,7 @@ gulp.task("scss-compile", () => {
   return gulp
     .src("assets/scss/*.scss")
     .pipe(plumber())
-    .pipe(sass({ outputStyle: "expanded" }))
+    .pipe(sass())
     .pipe(rename({ suffix: ".min" }))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(gulp.dest("assets/css"))
